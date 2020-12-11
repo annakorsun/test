@@ -4,7 +4,7 @@
 <body>
   <script>
   
-  	let num = prompt('Введите число', "");
+  	let num = +prompt('Введите число', "");
   	if(num > 7){
     	alert('Привет, мир!');
     }
@@ -20,11 +20,12 @@
 	let count = prompt("Введите количество символов в массиве", "");
 	let i;
 	for (i = 1; i <= count; i++){
-    	let item = prompt(`Введите ${i} й элемент`, "")
+    	let item = +prompt(`Введите ${i} й элемент`, "")
      	if(item % 3 == 0) {
      	document.writeln(item);
      	}
 	}
   </script>
 </body>
-</html>
+</html> 
+
